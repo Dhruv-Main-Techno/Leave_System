@@ -11,6 +11,7 @@ import {
   saveSecurityData,
 } from "@/data";
 import { registerIndieID } from "native-notify";
+import Constants from "expo-constants";
 
 interface LoginFormProps {
   pageNumber: 1 | 2 | 3 | 4;
@@ -78,9 +79,9 @@ export default function LoginForm({ pageNumber }: LoginFormProps) {
               });
               await registerIndieID(
                 identifier,
-                25808,
-                "iT4i6UowibvqQ70BwbTdkg"
-              ); // Replace 1234 with your App ID
+                parseInt(Constants.expoConfig?.extra?.INDIE_ID_APP_ID || "0"),
+                Constants.expoConfig?.extra?.INDIE_ID_API_KEY || ""
+              ); // Use env variables for IndieID
               router.push("/page1");
             }
             break;

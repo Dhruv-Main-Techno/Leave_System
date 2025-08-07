@@ -93,8 +93,8 @@ app.post("/api/auth/student", async (req, res) => {
             year: externalStudent.currentyear || "Unknown",
             section: externalStudent.section || "Unknown",
             phone: externalStudent.phone || "Unknown",
-            mentor: process.env.DEFAULT_MENTOR,
-            hod: process.env.DEFAULT_HOD,
+            mentor: process.env.DEFAULT_MENTOR, // from .env
+            hod: process.env.DEFAULT_HOD, // from .env
             createdAt: new Date(),
             updatedAt: new Date(),
           });

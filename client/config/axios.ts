@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Platform } from 'react-native';
+import Constants from 'expo-constants';
 
 // Set the base URL to the new endpoint
 // const getBaseUrl = () => {
@@ -12,7 +13,7 @@ import { Platform } from 'react-native';
 //   }
 // };
 const getBaseUrl = () => {
-  return "https://nps-backend-1.onrender.com";
+  return Constants.expoConfig?.extra?.API_BASE_URL || 'http://localhost:3000';
 };
 
 // Create axios instance with base configuration

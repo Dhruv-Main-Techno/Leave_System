@@ -41,7 +41,10 @@
       },
       "eas": {
         "projectId": "263e4a2b-b19b-4032-ab8c-9fbdaa8559b1"
-      }
+      },
+      "API_BASE_URL": "https://nps-backend-1.onrender.com",
+      "INDIE_ID_APP_ID": "25808",
+      "INDIE_ID_API_KEY": "iT4i6UowibvqQ70BwbTdkg"
     },
     "owner": "dhruv6969"
   }
