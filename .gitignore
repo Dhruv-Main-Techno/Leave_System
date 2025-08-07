@@ -31,3 +31,5 @@ Thumbs.db
 # Firebase files
 *.firebase
 
+client/eas.json
+client/google-services.json
