@@ -8,7 +8,7 @@ const { getHod, getMentor, setHod, setMentor } = require("./hodmentor");
 // Initialize Express
 const app = express();
 const port = process.env.PORT || 3000;
-
+//This is a SathuTest
 // Initialize Firebase Admin SDK
 admin.initializeApp({
   credential: admin.credential.applicationDefault(), // Use your Firebase credentials
